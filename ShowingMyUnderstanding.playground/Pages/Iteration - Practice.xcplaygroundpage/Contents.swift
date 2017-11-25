@@ -31,6 +31,26 @@ let canvas = Canvas(width: 300, height: 300)
 
 // Replace this comment and add your code below...
 
+//first row
+canvas.drawShapesWithBorders = false
+for x in stride(from: -50, to: 300, by: 50) {
+    for y in stride(from: 250, to: 50, by: -60) {
+    canvas.drawRectangle(bottomLeftX: x, bottomLeftY: y, width: 20, height: 5)
+    
+}
+}
+
+canvas.translate(byX: 25, byY: -50)
+
+for x in stride(from: 0, to: 300, by: 50) {
+    for y in stride(from: 250, to: 50, by: -60) {
+        canvas.drawRectangle(bottomLeftX: x, bottomLeftY: y, width: 20, height: 5)
+        
+    }
+}
+canvas.fillColor = Color.white
+canvas.drawRectangle(bottomLeftX: 0, bottomLeftY: 0, width: 1000, height: 100)
+canvas.drawRectangle(bottomLeftX: -50, bottomLeftY: 270, width: 1000, height: 200)
 
 /*:
  ## Template code
