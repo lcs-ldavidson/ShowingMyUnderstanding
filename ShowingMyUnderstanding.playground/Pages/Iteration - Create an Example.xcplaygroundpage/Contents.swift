@@ -21,6 +21,24 @@ let canvas = Canvas(width: 300, height: 300)
 
 // Replace this comment and add your code below...
 
+canvas.drawShapesWithFill = false
+for x in stride(from: -10, to: 320, by: 20) {
+    
+    canvas.drawEllipse(centreX: x, centreY: 150, width: 30, height: 300)
+    
+}
+
+canvas.rotate(by: 90)
+canvas.translate(byX: 0, byY: -300)
+canvas.drawShapesWithFill = false
+for x in stride(from: -10, to: 320, by: 20) {
+    
+    canvas.drawEllipse(centreX: x, centreY: 150, width: 30, height: 300)
+    
+}
+
+
+
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
